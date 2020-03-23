@@ -1,6 +1,6 @@
-#訓練流程
+# 訓練流程
 
-##基本架構
+## 基本架構
 ```python
 model   = model()
 seq = DataSequence()
@@ -11,7 +11,7 @@ history = model.fit_generator(seq,
                               )
 model.save_weights(Save_Name)
 ```
-##使用既有模型的輸出
+## 使用既有模型的輸出
 其中若 DataSequence() 中需要既有模型的輸出
 則在產生 seq 前需要先進行該模型的運行
 例如其中需要模型A的輸出
