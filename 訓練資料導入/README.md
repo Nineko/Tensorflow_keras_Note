@@ -16,6 +16,6 @@ Class 1 --
       img
   Angle 2--
       img
-Class 1 --
+Class 2 --
   ... ...
 ```
