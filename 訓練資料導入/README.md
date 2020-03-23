@@ -9,15 +9,13 @@ Class 1 --
  model --
   Angle 1--
       img
-      img
   Angle 2--
-      img
       img
  wireframe --
   Angle 1--
       img
-      img
   Angle 2--
       img
-      img
+Class 1 --
+  ... ...
 ```
