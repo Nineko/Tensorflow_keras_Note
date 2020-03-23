@@ -19,3 +19,21 @@ Class 2 --
   ... ...
 ```
 當然只要有辦法處裡，用任何結構儲存都行
+```python
+c = list(zip(ModelImageList, WireImageList))
+shuffle(c)
+ModelImageList, WireImageList = zip(*c)
+```
+此步驟將資料綁定後進行洗亂的動作
+```python
+final_dict = {
+  "Model"    : ModelImageList,
+  "Wireframe": WireImageList
+}
+df = pd.DataFrame(final_dict)
+df.to_pickle(saveName)
+```
+此為轉換成PKL檔案的主要指令
+另外也能夠存成CSV檔案
+不過若是儲存的內容屬於多維度的資訊
+使用PKL會比較好一些
